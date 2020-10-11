@@ -44,7 +44,7 @@ Para isso basta abrir os arquivos na sequencia abaixo utilizando o PLSQL Develop
 2. Compilar o Java Source que fará uso das bibliotecas que subimos através do loadjava:
 **java_source__GENERATE_QRCODE.jsp**
 
-3. Criar a package que será a API para utilização de nosso projeto: 
+3. Criar a package que será a API para utilização de nosso projeto:
 **package__QRCODE_K.pck**
 
 # Vídeo completo sobre o projeto
@@ -53,3 +53,18 @@ Criei um vídeo com todo o passo a passo do projeto para que fique mais fácil o
 
 Veja o vídeo em:
 https://genilto.com/oracle-e-java-como-gerar-um-qr-code-loadjava-e-java-compilado/
+
+# Outras possibilidades
+
+A intenção deste projeto sempre foi mostrar como é possível utilizar classes java diretamente dentro do banco de dados Oracle Utilizando PLSQL. Por isso utilizei o exemplo do QRCode.
+
+Conhecendo esse caminho, cria-se um novo mundo de possibilidades de desenvolvimento dentro do Oracle.
+
+Dessa forma, também gostaria de deixar claro que essa não é a única forma de gerar QRCode dentro do Oracle, como pode inclusive não ser a melhor.
+
+Por exemplo, existe o projeto do svetka17, que utiliza puramente PLSQL para fazer a geração do QRCode, também retornando um BLOB com o arquivo de imagem gerado. Eu não testei ainda a solução, mas se funcionar diretamente no PLSQL, eu acredito que seria uma solução muito mais fácil de ser implementada. Caso queiram testar:
+
+https://github.com/svetka17/make_qr
+
+Um abraço!
+Espero ter ajudado.
